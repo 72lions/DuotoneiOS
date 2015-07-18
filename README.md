@@ -2,6 +2,8 @@
 
 Spotify's new brand identity is full of bright colours. Here is the same effect in iOS
 
+![Duotone on iPhone](http://f.cl.ly/items/2X3929282V2j0c0Z0340/DuotoneIsometric1024.jpg)
+
 ## Usage
 
 ```objc
