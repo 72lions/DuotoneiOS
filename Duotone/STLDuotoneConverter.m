@@ -171,12 +171,16 @@
     if(context == NULL) {
         NSLog(@"Error context not created");
         free(pixels);
+        CGDataProviderRelease(provider);
+        CGColorSpaceRelease(colorSpaceRef);
+        CGImageRelease(iref);
 
         __weak STLDuotoneConverter *weakSelf = self;
         dispatch_async(dispatch_get_main_queue(), ^{
             STLDuotoneConverter *strongSelf = weakSelf;
             [strongSelf.delegate duotoneConverterDidFailToConvertImage:strongSelf];
         });
+        return nil;
     }
 
     UIImage *image = nil;
