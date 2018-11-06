@@ -1,0 +1,6 @@
+framework module Duotone_iOS {
+  umbrella header "Duotone-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
