@@ -13,7 +13,7 @@
 		1AD6260B1B596E6200AB8518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD626091B596E6200AB8518 /* Main.storyboard */; };
 		1AD6260D1B596E6200AB8518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD6260C1B596E6200AB8518 /* Assets.xcassets */; };
 		1AD626101B596E6200AB8518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD6260E1B596E6200AB8518 /* LaunchScreen.storyboard */; };
-		1AD626191B596EBE00AB8518 /* STLDuotoneConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD626181B596EBE00AB8518 /* STLDuotoneConverter.m */; };
+		9D487F3206CB929A32D15B78 /* Pods_Duotone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67867A9C09B3552EA5F1C4AD /* Pods_Duotone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,9 @@
 		1AD6260C1B596E6200AB8518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AD6260F1B596E6200AB8518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD626111B596E6200AB8518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AD626171B596EBE00AB8518 /* STLDuotoneConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLDuotoneConverter.h; sourceTree = "<group>"; };
-		1AD626181B596EBE00AB8518 /* STLDuotoneConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLDuotoneConverter.m; sourceTree = "<group>"; };
+		26D1C1256899BF7BCC60DEC0 /* Pods-Duotone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duotone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duotone/Pods-Duotone.release.xcconfig"; sourceTree = "<group>"; };
+		4B761D1E0956A1FEFAF6D024 /* Pods-Duotone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duotone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duotone/Pods-Duotone.debug.xcconfig"; sourceTree = "<group>"; };
+		67867A9C09B3552EA5F1C4AD /* Pods_Duotone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duotone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D487F3206CB929A32D15B78 /* Pods_Duotone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C95F881BB548E004A512C5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B761D1E0956A1FEFAF6D024 /* Pods-Duotone.debug.xcconfig */,
+				26D1C1256899BF7BCC60DEC0 /* Pods-Duotone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1AD625F41B596E6200AB8518 = {
 			isa = PBXGroup;
 			children = (
 				1AD625FF1B596E6200AB8518 /* Duotone */,
 				1AD625FE1B596E6200AB8518 /* Products */,
+				0C95F881BB548E004A512C5D /* Pods */,
+				68173DA63E8CE722B09891B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +76,6 @@
 			children = (
 				1AD626031B596E6200AB8518 /* AppDelegate.h */,
 				1AD626041B596E6200AB8518 /* AppDelegate.m */,
-				1AD626171B596EBE00AB8518 /* STLDuotoneConverter.h */,
-				1AD626181B596EBE00AB8518 /* STLDuotoneConverter.m */,
 				1AD626061B596E6200AB8518 /* ViewController.h */,
 				1AD626071B596E6200AB8518 /* ViewController.m */,
 				1AD626091B596E6200AB8518 /* Main.storyboard */,
@@ -84,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		68173DA63E8CE722B09891B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67867A9C09B3552EA5F1C4AD /* Pods_Duotone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AD626141B596E6200AB8518 /* Build configuration list for PBXNativeTarget "Duotone" */;
 			buildPhases = (
+				583CC95B7B42094E66707747 /* [CP] Check Pods Manifest.lock */,
 				1AD625F91B596E6200AB8518 /* Sources */,
 				1AD625FA1B596E6200AB8518 /* Frameworks */,
 				1AD625FB1B596E6200AB8518 /* Resources */,
+				65899E3A0121E81DC33F578A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -115,6 +136,7 @@
 				TargetAttributes = {
 					1AD625FC1B596E6200AB8518 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = LLV33K3333;
 					};
 				};
 			};
@@ -149,6 +171,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		583CC95B7B42094E66707747 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Duotone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65899E3A0121E81DC33F578A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Duotone/Pods-Duotone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Duotone-iOS/Duotone_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Duotone_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Duotone/Pods-Duotone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AD625F91B596E6200AB8518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -156,7 +217,6 @@
 			files = (
 				1AD626081B596E6200AB8518 /* ViewController.m in Sources */,
 				1AD626051B596E6200AB8518 /* AppDelegate.m in Sources */,
-				1AD626191B596EBE00AB8518 /* STLDuotoneConverter.m in Sources */,
 				1AD626021B596E6200AB8518 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +325,10 @@
 		};
 		1AD626151B596E6200AB8518 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B761D1E0956A1FEFAF6D024 /* Pods-Duotone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LLV33K3333;
 				INFOPLIST_FILE = Duotone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -277,8 +339,10 @@
 		};
 		1AD626161B596E6200AB8518 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D1C1256899BF7BCC60DEC0 /* Pods-Duotone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LLV33K3333;
 				INFOPLIST_FILE = Duotone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -306,6 +370,7 @@
 				1AD626161B596E6200AB8518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

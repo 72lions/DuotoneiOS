@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'Duotone' do
+  pod 'Duotone-iOS', :path => '../'
+
+end

@@ -1,0 +1,22 @@
+{
+  "name": "Duotone-iOS",
+  "version": "0.1.0",
+  "summary": "A short description of Duotone-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/QuentinArnault/Duotone-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "QuentinArnault": "quentin.arnault@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/QuentinArnault/Duotone-iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Duotone-iOS/Classes/**/*"
+}

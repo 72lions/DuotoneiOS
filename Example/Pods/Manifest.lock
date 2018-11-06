@@ -1,0 +1,16 @@
+PODS:
+  - Duotone-iOS (0.1.0)
+
+DEPENDENCIES:
+  - Duotone-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  Duotone-iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Duotone-iOS: c64c5a5a3a3750f1da82718675586384d8cebd6f
+
+PODFILE CHECKSUM: 934ae438696342571ec1f29db315dd0bca04466f
+
+COCOAPODS: 1.5.3
